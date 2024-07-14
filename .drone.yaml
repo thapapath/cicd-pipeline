@@ -1,5 +1,5 @@
 kind: pipeline
-type: docker
+type: kubernetes
 name: default
 
 steps:
@@ -29,7 +29,3 @@ trigger:
   branch:
     - master
     - main
-
-services:
-  - name: docker
-    image: docker:dind
